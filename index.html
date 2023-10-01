@@ -16,6 +16,53 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
 <link rel="favicon" href="favicon.ico?v=2">
+
+<script src="counter.js"></script>
+ 
+<style>
+  /* Reset some default styles */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  /* Style for the gallery container */
+  .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 10px;
+  }
+
+  /* Style for individual gallery items */
+  .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style for the images inside the gallery items */
+  .gallery-item img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  /* Style for image captions (optional) */
+  .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 5px;
+      text-align: center;
+  }
+</style>
  
 </head>
 
@@ -49,6 +96,9 @@
         <h3>My hobbies are spending a lot time on Web Designing and Development</h3>
       </div>
     </div>
+<hr>
+    <p>Current visitors: <span id="currentVisitorCount">Loading...</span></p>
+    <p>Total visitors: <span id="totalVisitorCount">Loading...</span></p>
     <hr>
     <div class="contact-me">
       <h2 class="get">Get In Touch</h2>
@@ -57,7 +107,29 @@
       <a class="btn" href="mailto:himanshuudeshmukh@gmail.com">Contact Me</a>
     </div>
   </div>
-
+  <div class="gallery">
+    <div class="gallery-item">
+        <img src="/img/1.png" alt="Image 1">
+        <div class="caption">Image 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="/img/2.png" alt="Image 1">
+        <div class="caption">Image 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="/img/3.png" alt="Image 1">
+        <div class="caption">Image 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="/img/4.png" alt="Image 1">
+        <div class="caption">Image 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="/img/5.png" alt="Image 1">
+        <div class="caption">Image 3</div>
+    </div>
+    <!-- Add more gallery items as needed -->
+</div>
 
   <div class="bottom-container">
     <a class="footer-link" href="https://www.linkedin.com/in/himanshu-deshmukh-aa7a83237/"><i
@@ -73,3 +145,6 @@
 </body>
 
 </html>
+
+
+
